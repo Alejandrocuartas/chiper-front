@@ -1,0 +1,10 @@
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: rgb(253 242 224);
+}
