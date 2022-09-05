@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import * as React from "react";
 import Modal from "./Modal";
-import { appContext } from "../context";
+import { useGlobalContext } from "../context";
 
 import useProductCreator from "../hooks/useProductCreator";
 
 const NewProduct = ({ isOpen, onClose }) => {
-    const { setProducts } = useContext(appContext);
+    const { setProducts } = useGlobalContext;
     const newProduct = async (e) => {
         try {
             e.preventDefault();

@@ -1,6 +1,6 @@
-import React, { useContext, useState } from "react";
+import * as React from "react";
 import Modal from "./Modal";
-import { appContext } from "../context";
+import { useGlobalContext } from "../context";
 
 import useDataUpdater from "../hooks/useDataUpdater";
 import useDeleter from "../hooks/useDeleter";
@@ -8,9 +8,9 @@ import useDeleter from "../hooks/useDeleter";
 import "./styles/ProductInfo.css";
 
 const ProductInfo = ({ isOpen, onClose, product }) => {
-    const { setProducts } = useContext(appContext);
-    const [editMode, setEditMode] = useState(false);
-    const [bodyUpdater, setBodyUpdater] = useState({});
+    const { setProducts } = useGlobalContext;
+    const [editMode, setEditMode] = React.useState(false);
+    const [bodyUpdater, setBodyUpdater] = React.useState({});
 
     const editData = (e) => {
         setBodyUpdater({ ...bodyUpdater, [e.target.name]: e.target.value });

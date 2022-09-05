@@ -1,17 +1,15 @@
-const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 module.exports = (env) => {
     return {
-        entry: "./src/index.js",
+        entry: "./src/index.jsx",
         output: {
-            path: path.resolve(__dirname, "public"),
             filename: "bundle.js",
-            publicPath: "/",
         },
+        devtool: "source-map",
         resolve: {
-            extensions: [".js", ".jsx"],
+            extensions: [".js", ".jsx", ".ts", ".tsx"],
         },
         devServer: {
             historyApiFallback: true,
@@ -19,10 +17,10 @@ module.exports = (env) => {
         module: {
             rules: [
                 {
-                    test: /\.(js|jsx)$/,
+                    test: /\.(t|j)sx?$/,
                     exclude: /node_modules/,
                     use: {
-                        loader: "babel-loader",
+                        loader: "ts-loader",
                     },
                 },
                 {

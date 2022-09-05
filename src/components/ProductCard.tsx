@@ -1,11 +1,11 @@
-import React, { useContext, useState } from "react";
+import * as React from "react";
 import ProductInfo from "./ProductInfo";
-import { appContext } from "../context";
+import { useGlobalContext } from "../context";
 import "./styles/ProductCard.css";
 
 const ProductCard = ({ product }) => {
-    const { cart, setCart } = useContext(appContext);
-    const [isOpen, setOpen] = useState(false);
+    const { cart, setCart } = useGlobalContext;
+    const [isOpen, setOpen] = React.useState(false);
     const onClose = () => {
         setOpen(false);
     };

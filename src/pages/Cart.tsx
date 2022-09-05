@@ -1,15 +1,19 @@
-import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import * as React from "react";
+const { useNavigate } = require("react-router-dom");
 import CartItem from "../components/CartItem";
-import { appContext } from "../context";
+import { useGlobalContext } from "../context";
 import "./styles/Cart.css";
 
 const Cart = () => {
     const navigate = useNavigate();
-    const { cart, setCart } = useContext(appContext);
+    const { cart, setCart } = useGlobalContext
     let cartPrices = cart.map((i) => {
-        const total = ((100 - i.discount) * i.price) / 100;
-        return total;
+        if(i.discount){
+            const total = ((100 - i.discount) * i.price) / 100;
+            return total;
+        }else{
+            return i.price
+        }
     });
 
     const buyProducts = () => {
@@ -20,7 +24,8 @@ const Cart = () => {
             })
                 .then(async (res) => {
                     if (!res.ok) {
-                        throw new Error(res.status);
+                        const resText = await res.json()
+                        throw new Error(resText.error);
                     }
                 })
                 .catch((err) => console.log(err));

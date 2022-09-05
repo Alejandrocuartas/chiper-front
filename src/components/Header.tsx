@@ -1,14 +1,14 @@
-import React, { useContext, useState, useMemo } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import * as React from "react";
+const { Link, useNavigate } = require("react-router-dom");
 import NewProduct from "./newProduct";
-import { appContext } from "../context";
+import {  useGlobalContext } from "../context";
 import "./styles/Header.css";
 
 const Header = () => {
     const navigate = useNavigate();
-    const [query, setQuery] = useState(" ");
-    const { products, setProducts } = useContext(appContext);
-    const [isOpen, setOpen] = useState(false);
+    const [query, setQuery] = React.useState(" ");
+    const { products, setProducts } = useGlobalContext
+    const [isOpen, setOpen] = React.useState(false);
     const onClose = () => {
         setOpen(false);
     };
@@ -29,7 +29,7 @@ const Header = () => {
         }
     };
 
-    const onQuery = (e) => {
+    const onQuery = (e: any) => {
         setQuery(e.target.value);
         const result = products.filter((product) => {
             return `${product.name} ${product.description}`
@@ -78,7 +78,7 @@ const Header = () => {
                                 className="form-select"
                                 aria-label="Default select example"
                             >
-                                <option defaultValue>Filter by price</option>
+                                <option defaultValue='true'>Filter by price</option>
                                 <option value="1">Descending</option>
                                 <option value="2">Ascending</option>
                             </select>

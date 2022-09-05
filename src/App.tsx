@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import * as React from "react";
+const { Route, Routes, BrowserRouter } = require("react-router-dom");
 
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
