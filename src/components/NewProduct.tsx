@@ -5,12 +5,13 @@ import { useGlobalContext } from "../context";
 import useProductCreator from "../hooks/useProductCreator";
 
 const NewProduct = ({ isOpen, onClose }) => {
-    const { setProducts } = useGlobalContext();
+    const { setProducts, socket } = useGlobalContext();
     const newProduct = async (e) => {
         try {
             e.preventDefault();
             const formData = new FormData(e.target);
             const products = await useProductCreator(formData);
+            socket.emit("new-product", true);
             setProducts(products);
             onClose();
         } catch (error) {

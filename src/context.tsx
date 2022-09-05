@@ -1,4 +1,5 @@
 import * as React from "react";
+import { io } from "../node_modules/socket.io-client/build/esm/index";
 export type product = {
     _id: string;
     price: number;
@@ -13,6 +14,7 @@ export type ContextProps = {
     products: product[];
     setProducts: (param: product[]) => void;
     setCart: (param: product[]) => void;
+    socket: any;
 };
 const defaultPoduct: product = {
     _id: "",
@@ -26,6 +28,7 @@ const defaultProps: ContextProps = {
     products: [defaultPoduct],
     setProducts: (param: product[]) => {},
     setCart: (param: product[]) => {},
+    socket: io(),
 };
 
 const appContext = React.createContext<ContextProps>(defaultProps);
@@ -41,6 +44,7 @@ const ContextAppProvider = ({ children }) => {
         setCart: (newCart: product[]) => {
             setCart(newCart);
         },
+        socket: io(`${process.env.API}`),
     };
 
     return (

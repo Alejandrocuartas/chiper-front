@@ -6,14 +6,12 @@ import { useGlobalContext } from "../context";
 import "./styles/Home.css";
 
 const Home = () => {
-    const { products, setProducts } = useGlobalContext();
+    const { products, setProducts, socket } = useGlobalContext();
 
     React.useEffect(() => {
-        fetch(`${process.env.API}/api/product`)
-            .then((res) => res.json())
-            .then((res) => {
-                setProducts(res.products);
-            });
+        socket.on("get-products", (res) => {
+            setProducts(res.products);
+        });
     }, []);
 
     if (products.length === 0) {
