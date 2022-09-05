@@ -1,18 +1,18 @@
-const useDataUpdater = async (id, body) => {
+const useDeleter = async (id: string) => {
     try {
         const options = {
-            method: "PATCH",
+            method: "DELETE",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(body),
         };
         const res = await fetch(
             `${process.env.API}/api/product/${id}`,
             options
         );
         if (!res.ok) {
-            throw new Error(res.status);
+            const resText = await res.json()
+            throw new Error(resText.error);
         }
         const response = await res.json();
         return response.products;
@@ -21,4 +21,4 @@ const useDataUpdater = async (id, body) => {
     }
 };
 
-export default useDataUpdater;
+export default useDeleter;

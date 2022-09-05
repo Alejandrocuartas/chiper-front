@@ -18,15 +18,9 @@
         "react-router-dom": "^6.2.1"
     },
     "devDependencies": {
-        "@babel/core": "^7.17.5",
-        "@babel/plugin-transform-async-to-generator": "^7.16.8",
-        "@babel/plugin-transform-runtime": "^7.17.0",
-        "@babel/preset-env": "^7.16.11",
-        "@babel/preset-react": "^7.16.7",
         "@types/react": "^18.0.18",
         "@types/react-dom": "^18.0.6",
         "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
-        "babel-loader": "^8.2.3",
         "css-loader": "^6.6.0",
         "enzyme": "^3.11.0",
         "html-loader": "^3.1.0",
