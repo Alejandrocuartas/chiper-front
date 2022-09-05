@@ -1,11 +1,14 @@
+const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 module.exports = (env) => {
     return {
-        entry: "./src/index.jsx",
+        entry: "./src/index.tsx",
         output: {
+            path: path.resolve(__dirname, "public"),
             filename: "bundle.js",
+            publicPath: "/",
         },
         devtool: "source-map",
         resolve: {

@@ -5,15 +5,14 @@ import { useGlobalContext } from "../context";
 
 import "./styles/Home.css";
 
-
 const Home = () => {
-const { products, setProducts } = useGlobalContext
+    const { products, setProducts } = useGlobalContext();
 
     React.useEffect(() => {
         fetch(`${process.env.API}/api/product`)
             .then((res) => res.json())
             .then((res) => {
-                setProducts(res.products)
+                setProducts(res.products);
             });
     }, []);
 

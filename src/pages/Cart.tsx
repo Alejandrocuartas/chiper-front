@@ -6,13 +6,13 @@ import "./styles/Cart.css";
 
 const Cart = () => {
     const navigate = useNavigate();
-    const { cart, setCart } = useGlobalContext
+    const { cart, setCart } = useGlobalContext();
     let cartPrices = cart.map((i) => {
-        if(i.discount){
+        if (i.discount) {
             const total = ((100 - i.discount) * i.price) / 100;
             return total;
-        }else{
-            return i.price
+        } else {
+            return i.price;
         }
     });
 
@@ -24,7 +24,7 @@ const Cart = () => {
             })
                 .then(async (res) => {
                     if (!res.ok) {
-                        const resText = await res.json()
+                        const resText = await res.json();
                         throw new Error(resText.error);
                     }
                 })

@@ -20,7 +20,10 @@ const CartItem = ({ product }) => {
                 <strong>
                     <div>
                         Final price: $
-                        {((100 - product.discount) * product.price) / 100}
+                        {(
+                            ((100 - product.discount) * product.price) /
+                            100
+                        ).toFixed(2)}
                     </div>
                 </strong>
             </div>

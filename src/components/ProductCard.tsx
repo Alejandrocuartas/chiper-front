@@ -4,7 +4,7 @@ import { useGlobalContext } from "../context";
 import "./styles/ProductCard.css";
 
 const ProductCard = ({ product }) => {
-    const { cart, setCart } = useGlobalContext;
+    const { cart, setCart } = useGlobalContext();
     const [isOpen, setOpen] = React.useState(false);
     const onClose = () => {
         setOpen(false);
@@ -30,8 +30,11 @@ const ProductCard = ({ product }) => {
                                     <div>
                                         $
                                         <strong>
-                                            {((100 - product.discount) / 100) *
-                                                product.price}
+                                            {(
+                                                ((100 - product.discount) /
+                                                    100) *
+                                                product.price
+                                            ).toFixed(2)}
                                         </strong>
                                     </div>
                                 </div>

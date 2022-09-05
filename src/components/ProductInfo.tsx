@@ -8,7 +8,7 @@ import useDeleter from "../hooks/useDeleter";
 import "./styles/ProductInfo.css";
 
 const ProductInfo = ({ isOpen, onClose, product }) => {
-    const { setProducts } = useGlobalContext;
+    const { setProducts } = useGlobalContext();
     const [editMode, setEditMode] = React.useState(false);
     const [bodyUpdater, setBodyUpdater] = React.useState({});
 

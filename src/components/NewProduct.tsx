@@ -5,7 +5,7 @@ import { useGlobalContext } from "../context";
 import useProductCreator from "../hooks/useProductCreator";
 
 const NewProduct = ({ isOpen, onClose }) => {
-    const { setProducts } = useGlobalContext;
+    const { setProducts } = useGlobalContext();
     const newProduct = async (e) => {
         try {
             e.preventDefault();
@@ -31,6 +31,7 @@ const NewProduct = ({ isOpen, onClose }) => {
                         className="form-control"
                         id="productName"
                         required
+                        maxLength={25}
                     />
                 </div>
                 <div className="mb-3">
