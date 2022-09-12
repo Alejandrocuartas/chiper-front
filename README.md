@@ -33,8 +33,6 @@
   <p align="center">
     THIS IS NOT A CHIPER's TECHNICAL TEST!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://chiper-test.herokuapp.com">View Demo</a>
     ·
@@ -46,9 +44,9 @@
 ## About The Project
 I had 3 days to complete the next Fullstack test
 
-[![Product Name Screen Shot][product-screenshot]]: https://res.cloudinary.com/dvpcbukeh/image/upload/v1663001768/github/tech1_yypcqi.png
-[![Product Name Screen Shot][product-screenshot]]: https://res.cloudinary.com/dvpcbukeh/image/upload/v1663001768/github/tech2_baevys.png
-[![Product Name Screen Shot][product-screenshot]]: https://res.cloudinary.com/dvpcbukeh/image/upload/v1663001768/github/tech3_x5hyvn.png
+[page1](https://res.cloudinary.com/dvpcbukeh/image/upload/v1663001768/github/tech1_yypcqi.png)
+[page2](https://res.cloudinary.com/dvpcbukeh/image/upload/v1663001768/github/tech2_baevys.png)
+[page3](https://res.cloudinary.com/dvpcbukeh/image/upload/v1663001768/github/tech3_x5hyvn.png)
 
 ### Built With
 
@@ -66,13 +64,14 @@ I had 3 days to complete the next Fullstack test
 * [![Typescript][typescript]][typescript-url]
 * [![Express][Express.js]][express-url]
 * [![Socket.io][Socket.io]][Socket.io-url]
+* [![MongoDB][mongo]][mongo-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/cuartas/
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=blue
+[linkedin-url]: https://www.linkedin.com/in/cuartas
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
@@ -87,3 +86,5 @@ I had 3 days to complete the next Fullstack test
 [Express.js]: https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white
 [typescript-url]: https://www.typescriptlang.org
 [typescript]: https://img.shields.io/badge/Typescript-ffffff?style=for-the-badge&logo=typescript&logoColor=blue
+[mongo-url]: https://www.mongodb.com
+[mongo]: https://img.shields.io/badge/MongoDB-000000?style=for-the-badge&logo=mongodb&logoColor=green
