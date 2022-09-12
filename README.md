@@ -54,6 +54,7 @@ I had 3 days to complete the next Fullstack test
 
 #### Frontend
 
+* [![Typescript][typescript]][typescript-url]
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![Socket.io][Socket.io]][Socket.io-url]
@@ -61,35 +62,12 @@ I had 3 days to complete the next Fullstack test
 
 #### Backend
 
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+* [![Node][Node.js]][node-url]
+* [![Typescript][typescript]][typescript-url]
+* [![Express][Express.js]][express-url]
+* [![Socket.io][Socket.io]][Socket.io-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -100,6 +78,12 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [Socket.io-url]: https://socket.io
-[Socket.io]: https://img.shields.io/badge/Socket.io-000000?style=for-the-badge&logo=socket.io&logoColor=white
+[Socket.io]: https://img.shields.io/badge/Socket.io-ffffff?style=for-the-badge&logo=socket.io&logoColor=black
 [react-router-url]: https://www.npmjs.com/package/react-router-dom
-[react-router]: https://img.shields.io/badge/react_router-000000?style=for-the-badge&logo=react%20router&logoColor=white
+[react-router]: https://img.shields.io/badge/React_Router-ffffff?style=for-the-badge&logo=react%20router&logoColor=black
+[node-url]: https://nodejs.org
+[Node.js]: https://img.shields.io/badge/Node.js-7ac822?style=for-the-badge&logo=node.js&logoColor=white
+[express-url]: http://expressjs.com
+[Express.js]: https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white
+[typescript-url]: https://www.typescriptlang.org
+[typescript]: https://img.shields.io/badge/Typescript-ffffff?style=for-the-badge&logo=typescript&logoColor=blue
