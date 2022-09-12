@@ -44,9 +44,9 @@
 ## About The Project
 I had 3 days to complete the next Fullstack test
 
-[page1](https://res.cloudinary.com/dvpcbukeh/image/upload/v1663001768/github/tech1_yypcqi.png)
-[page2](https://res.cloudinary.com/dvpcbukeh/image/upload/v1663001768/github/tech2_baevys.png)
-[page3](https://res.cloudinary.com/dvpcbukeh/image/upload/v1663001768/github/tech3_x5hyvn.png)
+![page1](https://res.cloudinary.com/dvpcbukeh/image/upload/v1663001768/github/tech1_yypcqi.png)
+![page2](https://res.cloudinary.com/dvpcbukeh/image/upload/v1663001768/github/tech2_baevys.png)
+![page3](https://res.cloudinary.com/dvpcbukeh/image/upload/v1663001768/github/tech3_x5hyvn.png)
 
 ### Built With
 
