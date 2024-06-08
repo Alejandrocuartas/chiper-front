@@ -1,6 +1,6 @@
 import React, { useContext, useState, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import NewProduct from "./newProduct";
+import NewProduct from "./NewProduct";
 import { appContext } from "../context";
 import "./styles/Header.css";
 

@@ -4,8 +4,8 @@
     "description": "",
     "main": "./src/index.js",
     "scripts": {
-        "start": "webpack serve --env API=http://localhost:3000 --mode development --env development",
-        "build": "webpack --env API=https://chiper-test.herokuapp.com --mode production",
+        "start": "webpack serve --env API=https://chiper-test.onrender.com --mode development --env development",
+        "build": "webpack --env API=https://chiper-test.onrender.com --mode production",
         "test": "jest",
         "test:watch": "jest --watch"
     },
