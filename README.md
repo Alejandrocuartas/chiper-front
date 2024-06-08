@@ -25,7 +25,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://yt3.ggpht.com/a/AATXAJzhtzOCERi4wAPlqKtM9jghYlTGkb1Z52nDyQ=s900-c-k-c0xffffffff-no-rj-mo" alt="Logo" width="80" height="80">
+    <img src="https://growth.chiper.co/static/media/chiper-logo.b02a6520d32de77f5cfaea94e3f7757b.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Technical test</h3>
@@ -34,7 +34,7 @@
     THIS IS NOT A CHIPER's TECHNICAL TEST!
     <br />
     <br />
-    <a href="https://chiper-test.herokuapp.com">View Demo</a>
+    <a href="https://main.d1wz2eh65rj09o.amplifyapp.com/">View Demo</a>
     ·
     <a href="https://github.com/Alejandrocuartas/chiper-test/tree/ts">View backend repository</a>
   </p>
